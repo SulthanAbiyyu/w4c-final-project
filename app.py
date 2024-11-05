@@ -58,6 +58,8 @@ class_names = [
         'styrofoam_cups', 'styrofoam_food_containers', 'tea_bags'
     ]
 
+st.set_page_config(page_title="Waste Thinker 1.0", page_icon="♻", layout="centered")
+
 class WasteClassificationModel(nn.Module):
     def __init__(self):
         super().__init__()
