@@ -122,7 +122,7 @@ st.logo(image="./img/logo.png", size="large")
 
 img_path = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
-st.subheader("Example Images")
+st.markdown("##### Example Images")
 
 col_1, col_2, col_3 = st.columns(3)
 
