@@ -116,6 +116,8 @@ with st.expander("About"):
 
 Our solution enhances operational efficiency by minimizing fatigue-related errors, while significantly lowering energy consumption and costs. Ideal for large-scale waste processing, the AI-driven system optimizes productivity and ensures sustainable waste management, offering a scalable approach to meet the demands of smart cities.""")
 
+st.logo(image="./img/logo.png", size="large")
+
 img_path = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
 st.subheader("Example Images")
