@@ -127,16 +127,16 @@ st.markdown("##### Example Images")
 col_1, col_2, col_3 = st.columns(3)
 
 with col_1:
-    st.image(example_images["Plastic"], use_column_width=True)
+    st.image(example_images["Plastic"], use_container_width=True)
     if st.button("Predict Plastic Image", key="plastic"):
         img_path = example_images["Plastic"]
         
 with col_2:
-    st.image(example_images["Metal"], use_column_width=True)
+    st.image(example_images["Metal"], use_container_width=True)
     if st.button("Predict Metal Image", key="metal"):
         img_path = example_images["Metal"]
 with col_3:
-    st.image(example_images["Glass"], use_column_width=True)
+    st.image(example_images["Glass"], use_container_width=True)
     if st.button("Predict Glass Image", key="glass"):
         img_path = example_images["Glass"]
 
@@ -156,7 +156,7 @@ if img_path is not None:
     col1, col2 = st.columns([0.6, 0.4], vertical_alignment="center")
     
     with col1:
-        st.image(image, use_column_width=True)
+        st.image(image, use_container_width=True)
 
     with col2:
         for i, (label, prob) in enumerate(predictions):
