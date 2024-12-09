@@ -116,7 +116,14 @@ st.title("Waste Classification")
 with st.expander("About"):
     st.write("""Introducing our AI-powered **Waste Classification System**, designed to automate waste sorting operations. By utilizing AI, our system achieves an impressive accuracy rate of **85%**, outperforming traditional manual and semi-mechanical sorting methods.
 
-Our solution enhances operational efficiency by minimizing fatigue-related errors, while significantly lowering energy consumption and costs. Ideal for large-scale waste processing, the AI-driven system optimizes productivity and ensures sustainable waste management, offering a scalable approach to meet the demands of smart cities.""")
+Our solution enhances operational efficiency by minimizing fatigue-related errors, while significantly lowering energy consumption and costs. Ideal for large-scale waste processing, the AI-driven system optimizes productivity and ensures sustainable waste management, offering a scalable approach to meet the demands of smart cities.
+
+**Limitation: **
+1. Doesn’t have the ability to estimate the quantity.
+2. Finds it tricky to distinguish multiple objects in a single image.
+3. Objects might not always be detected if they are not ideally positioned, e.g., certain angles can make detection more difficult.
+4. Identifies non-waste objects as waste since the AI is trained only to predict waste.
+""")
 
 st.logo(image="./img/logo.png", size="large")
 
